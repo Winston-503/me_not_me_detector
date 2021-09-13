@@ -2,7 +2,9 @@
 
 Real-time face detector with Python, TensorFlow/Keras and OpenCV. This is program, that do real-time face detection on webcam image and also can distinguish me from other people.
 
-You can read detailed tutorial [here](). There you can find problem statement, some theory explanations and code analysis.
+## Tutorial
+
+You can read detailed tutorial [here](https://gitlab.com/Winston-90/me_not_me_detector/-/blob/main/article/article.md). There you can find problem statement, some theory explanations and code analysis.
 
 ## Results
 
