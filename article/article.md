@@ -6,7 +6,7 @@ All code is available in [this repo](https://gitlab.com/Winston-90/me_not_me_det
 
 First, in **Theoretical Part** I will tell you a little about the concepts that will be useful for us (*Transfer Learning* and *Data Augmentation*), and then I will go to the code analysis in the **Practical Part** section.
 
-Note, that you must have *tensorflow* and *opencv* libraries installed to run this code. You can do it manually or simply run `pip install -r requirements.txt` command after you have repo downloaded. You can also do it with conda commands `conda install -c conda-forge numpy, opencv, tensorflow`
+Note, that you must have *tensorflow* and *opencv* libraries installed to run this code. You can do it manually or simply run `pip install -r requirements.txt` command after you have repo downloaded. You can also do it with conda commands `conda install -c conda-forge numpy, opencv, tensorflow`.
 
 ## Problem Statement
 
@@ -34,7 +34,7 @@ Since we are talking about image recognition, we will use *CNN - Convolutional N
 
 | ![CNN.jpg](img/CNN.jpg) |
 |:--:|
-| <b>Convolutional Neural Network</b>|
+| <b>Typical Convolutional Neural Network Architecture</b>|
 
 The image is taken from [this beautiful article](https://towardsdatascience.com/a-comprehensive-guide-to-convolutional-neural-networks-the-eli5-way-3bd2b1164a53), where you can read more about CNN.
 
@@ -58,7 +58,7 @@ Transfer Learning is the most important concept for this task, since it is very 
 |:--:|
 | <b>Transfer learning. Image from Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow by Aurélien Géron</b>|
 
-This happens as follows. You find a model that is trained for a similar task (for example, recognizing 1000 classes of images, as in *imagenet*, when you need to recognize only a few). Then you use it's weights (freeze them, which means that they will not change), and finish training the model on your small dataset. After that, you can also unfreeze all the weights and continue training the model with a very small learning rate.
+This happens as follows. You find a model that is trained for a similar task (for example, recognizing 1000 classes of images, as in *ImageNet*, when you need to recognize only a few). Then you use it's weights (freeze them, which means that they will not change), and finish training the model on your small dataset. After that, you can also unfreeze all the weights and continue training the model with a very small learning rate.
 
 This process becomes possible due to the features of the CNN architecture and the image recognition task (but also can be used with different architectures). The network learns to see patterns from layer to layer (from input to output) and they are getting more and more complicated. By the way, this explains why we are increasing the number of filters. It turns out that the general patterns for all problems are approximately the same, which allows us to use pretrained weights.
 
@@ -134,7 +134,7 @@ When the dataset is ready, we can start training the model.
 
 ### 2. Search for a Base Model for Transfer Learnings
 
-There is nothing complicated here - I just used different models that are trained on *imagenet* dataset. If they don't have a good accuracy, then I think I will use something like VGGFace models like [here](https://machinelearningmastery.com/how-to-perform-face-recognition-with-vggface2-convolutional-neural-network-in-keras/). But the quality I got is good enough. We can load pretrained keras model with this code:
+There is nothing complicated here - I just used different models that are trained on *ImageNet* dataset. If they don't have a good accuracy, then I think I will use something like VGGFace models like [here](https://machinelearningmastery.com/how-to-perform-face-recognition-with-vggface2-convolutional-neural-network-in-keras/). But the quality I got is good enough. We can load pretrained keras model with this code:
 
 ```python
 from tensorflow import keras
