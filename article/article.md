@@ -368,4 +368,6 @@ Now I will say one more phrase that will confuse you even more. The convolutiona
 
 So, it is better to build a model that will better locate these points, and then you can do with a more simple classifier. Of course, the rules by which these representations are built are very complex, which is why we need deep models with a large number of parameters.
 
+A network that creates embeddings well can solve tasks for which it was not originally trained. So, a good model will locate all my photos close to each other (in some high-dimensional space) and all Willem Dafoe' photos close to each other. But at the same time, these two clouds of points should be located far apart. Now, when you show a network a photo of another person, it will be able to say that it is not_me, but in addition, it will be able to give out the person he most resembles or note that this person was not in the dataset. This is a variation of Metric Learning, Triplet Loss is used here.
+
 That's it! If you have any questions or comments, I will be glad to get any feedback. Contact me via [LinkedIn](https://www.linkedin.com/in/andimid), [GitLab](https://gitlab.com/Winston-90) or email - nikolaevdmitryprog@gmail.com.
