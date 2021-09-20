@@ -2,6 +2,10 @@
 
 In this tutorial, I will show you how to write a real-time face detector using Python, TensorFlow/Keras and OpenCV.
 
+| ![preview.jpg](img/preview.jpg) |
+|:--:|
+| <b>Real-time 'me-not_me' Face Detector</b>|
+
 All code is available in [this repo](https://gitlab.com/Winston-90/me_not_me_detector/).
 
 First, in **Theoretical Part** I will tell you a little about the concepts that will be useful for us (*Transfer Learning* and *Data Augmentation*), and then I will go to the code analysis in the **Practical Part** section.
@@ -315,9 +319,9 @@ I want to note that I used *MobileNet* as a base model. Initially, I used *ResNe
 
 That's it! You can find the finished code in the `me_not_me_detector.ipynb` notebook, but note that to use it, you need to have a model in the `models` folder, otherwise you will get an error in the *load the model* cell. Here is the result. 
 
-[![Real-time 'me-not_me' Face Detector](https://img.youtube.com/vi/j_cn1p6_B7I/0.jpg)](https://www.youtube.com/watch?v=j_cn1p6_B7I)
+[![Real-time 'me-not_me' Face Detector](https://img.youtube.com/vi/MtEcbV5hdhQ/0.jpg)](https://www.youtube.com/watch?v=MtEcbV5hdhQ)
 
-If for some reason you can't see the video above here is the link - [Real-time 'me-not_me' Face Detector on Youtube](https://www.youtube.com/watch?v=j_cn1p6_B7I).
+If for some reason you can't see the video above here is the link - [Real-time 'me-not_me' Face Detector on Youtube](https://www.youtube.com/watch?v=MtEcbV5hdhQ).
 
 I must say that although the model is quite simple, it already recognizes me well, for example if part of the face is covered. Also, I don't have a photo of Willem Dafoe in the dataset, so the model hasn't seen him before.
 
