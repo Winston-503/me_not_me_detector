@@ -307,7 +307,7 @@ Now all that remains is to load the pretrained model, pass it the fragment of th
 
 I could add images with a different scale to the dataset, but I decided to do it honestly. To do this, I wrote the function `get_extended_image()`, which increases the size of the cropped image with a certain coefficient k. The larger the k, the larger the area around the face. To explain the operation of this function (or to confuse you even more), I give the following image (for simplicity, here k = 0.3, and the scale is not observed. Note, that upper left coordinate is (0, 0)). You can also see clippings of my face with different k parameters (according to the OpenCV, it uses a BGR instead of RGB, but instead of adjusting the color, let's imagine that I am an avatar). For the resulting model, I used k = 0.5.
 
-| ![get_extended_image](img/get_extended_image.JPG) |
+| ![get_extended_image](img/get_extended_image.jpg) |
 |:--:|
 | <b>get_extended_image() function explanation</b>|
 
