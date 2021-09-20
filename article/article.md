@@ -26,17 +26,15 @@ Before I begin to analyze these stages, I would like to very briefly outline the
 
 ## Theoretical Part
 
-At this point, I must say that this tutorial is not as detailed as it could be. For example, I will not explain what *convolution* is or why *pooling layers* are needed in CNN architecture. Of course you need to know this to understand how CNN works, but I think that this tutorial will be too cumbersome, if I explain all the concepts. On the other hand, other people have already explained many things and did it better than me. For example, you can read about popular CNN architectures [here](https://www.jeremyjordan.me/convnet-architectures/).
+At this point, I must say that this tutorial is not as detailed as it could be. For example, I will not explain what *convolution* is or why *pooling layers* are needed in CNN architecture. Of course you need to know this to understand how CNN works, but I think that this tutorial will be too cumbersome, if I explain all the concepts. On the other hand, other people have already explained many things and did it better than me. For example, [here you can read about CNN in general](https://towardsdatascience.com/a-comprehensive-guide-to-convolutional-neural-networks-the-eli5-way-3bd2b1164a53), and [here - about popular CNN architectures](https://www.jeremyjordan.me/convnet-architectures/).
 
 ### Convolutional Neural Networks
 
 Since we are talking about image recognition, we will use *CNN - Convolutional Neural Networks*, the architecture that has achieved the greatest success in this task.
 
-| ![CNN.jpg](img/CNN.jpg) |
+| ![typical_CNN.jpg](img/typical_CNN.jpg) |
 |:--:|
 | <b>Typical Convolutional Neural Network Architecture</b>|
-
-The image is taken from [this beautiful article](https://towardsdatascience.com/a-comprehensive-guide-to-convolutional-neural-networks-the-eli5-way-3bd2b1164a53), where you can read more about CNN.
 
 Unlike classical neural networks (here I mean *FDN - Feedforward Neural Network*), in CNN, neurons are: 
 - firstly: arranged in the form of a tensor, not an array, 
@@ -48,15 +46,15 @@ This approach allows you to significantly reduce the number of network parameter
 |:--:|
 | <b>Feedforward Neural Network vs Convolutional Neural Network</b>|
 
-At the bottom of this image, I want to explain that the layer in CNN is a *tensor*. Tensor is, basically, a sequence of matrices. So each of these tensors is just a series of matrices standing on top of each other like pizza boxes. In turn, matrices are simply a sequence of neurons that are arranged in the form of a matrix, not an array, as in classic networks.
+At the bottom of this image, I want to explain that the layer in CNN is a *tensor* (it is often drawn as a parallelepiped). Tensor is, basically, a sequence of matrices. So each of these tensors is just a series of matrices standing on top of each other like pizza boxes. In turn, matrices are simply a sequence of neurons that are arranged in the form of a matrix, not an array, as in classic networks.
 
 ### Transfer Learning
 
 Transfer Learning is the most important concept for this task, since it is very difficult (almost impossible) to build a face classifier from scratch. Transfer Learning is the process of using a pretrained model for your own task.
 
-| ![transfer_learning](img/transfer_learning.jpg) |
+| ![transfer_learning](img/transfer_learning.JPG) |
 |:--:|
-| <b>Transfer learning. Image from Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow by Aurélien Géron</b>|
+| <b>Transfer learning</b>|
 
 This happens as follows. You find a model that is trained for a similar task (for example, recognizing 1000 classes of images, as in *ImageNet*, when you need to recognize only a few). Then you use it's weights (freeze them, which means that they will not change), and finish training the model on your small dataset. After that, you can also unfreeze all the weights and continue training the model with a very small learning rate.
 
