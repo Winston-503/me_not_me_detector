@@ -52,7 +52,7 @@ At the bottom of this image, I want to explain that the layer in CNN is a *tenso
 
 Transfer Learning is the most important concept for this task, since it is very difficult (almost impossible) to build a face classifier from scratch. Transfer Learning is the process of using a pretrained model for your own task.
 
-| ![transfer_learning](img/transfer_learning.JPG) |
+| ![transfer_learning](img/transfer_learning.jpg) |
 |:--:|
 | <b>Transfer learning</b>|
 
