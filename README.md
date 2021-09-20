@@ -8,7 +8,7 @@ Real-time face detector with Python, TensorFlow/Keras and OpenCV. This is progra
 
 ## Tutorial
 
-You can read detailed tutorial [here](https://gitlab.com/Winston-90/me_not_me_detector/-/blob/main/article/article.md). There you can find problem statement, some theory explanations and code analysis.
+You can read detailed tutorial [on Medium](https://medium.com/@andimid/how-to-create-real-time-face-detector-ff0e1f81925f?source=friends_link&sk=17ebce72cb5549fd48c95691e9808149) or directly [on GitLab](https://gitlab.com/Winston-90/me_not_me_detector/-/blob/main/article/article.md). There you can find problem statement, some theory explanations and code analysis.
 
 ## Results
 
