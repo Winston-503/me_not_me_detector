@@ -1,6 +1,8 @@
 # Real-time 'me-not_me' Face Detector
 
-Real-time face detector with Python, TensorFlow/Keras and OpenCV. This is program, that do real-time face detection on webcam image and also can distinguish me from other people.
+Real-time face detector built using Python, TensorFlow/Keras and OpenCV. 
+
+This is a program, that does real-time face detection on webcam image and also can distinguish me from other people.
 
 | ![preview.jpg](article/img/preview.jpg) |
 |:--:|
@@ -20,7 +22,7 @@ If for some reason you can't see the video above here is the link - [Real-time '
 
 To run this code, you must have *tensorflow* and *opencv* libraries installed.
 
-You should create virtual environment, activate it and run `pip install -r requirements.txt`. You can also do it with conda - create virtual environment, activate it and run following commands (they are listed in `requirements.txt` file too):
+You should create a virtual environment, activate it and run `pip install -r requirements.txt`. You can also do it with conda - create virtual environment, activate it and run the following commands (they are listed in the `requirements.txt` file too):
 
 ```
 conda install -c conda-forge numpy
@@ -36,6 +38,15 @@ The project has the following structure:
 me_not_me_detector
 ├───article
 ├───datasets
+│   ├───face_dataset_test_images
+│   │   ├───me      # this folder contains TEST images for ME class
+│   │   └───not_me  # this folder contains TEST images for NOT_ME class
+│   ├───face_dataset_train_aug_images
+│   │   ├───me      # this folder contains augmented TRAIN images for ME class (optional)
+│   │   └───not_me  # this folder contains augmented TRAIN images for NOT_ME class (optional)
+│   └───face_dataset_train_images
+│       ├───me      # this folder contains TRAIN images for ME class
+│       └───not_me  # this folder contains TRAIN images for NOT_ME class
 ├───models
 │   .gitignore
 │   data_augmentation.ipynb
@@ -48,8 +59,8 @@ me_not_me_detector
 
 Let's talk about folders.
 - The `article` folder contains the data for the tutorial.
-- The `datasets` folder contains datasets, each of them has two classes - *me* and *not_me*. To know more about the dataset see `data_augmentation.ipynb`.
-- The `models` folder contains the trained models for their test and further use.
+- The `models` folder contains trained models for their test and further use.
+- The `datasets` folder contains three folders - for a train set, test set and augmented train set (optional). Each of them contains two subfolders for two classes - *me* and *not_me*. In the general case, it contains N subfolders for N classes.
 
 Now let's talk about the code files - jupyter notebooks. 
 - `data_augmentation.ipynb` file creates an augmented dataset from an initial one and provides some information about the dataset.
