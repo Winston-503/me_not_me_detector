@@ -4,13 +4,13 @@ Real-time face detector built using Python, TensorFlow/Keras and OpenCV.
 
 This is a program, that does real-time face detection on webcam image and also can distinguish me from other people.
 
-| ![preview.jpg](article/img/preview.jpg) |
+| ![preview.jpg](img/preview.jpg) |
 |:--:|
 | <b>Real-time 'me-not_me' Face Detector</b>|
 
 ## Tutorial
 
-You can read detailed tutorial [on Towards Data Science](https://towardsdatascience.com/how-to-create-real-time-face-detector-ff0e1f81925f) or directly [on GitLab](https://gitlab.com/Winston-90/me_not_me_detector/-/blob/main/article/article.md). There you can find problem statement, some theory explanations and code analysis.
+You can read detailed tutorial [on Towards Data Science](https://towardsdatascience.com/how-to-create-real-time-face-detector-ff0e1f81925f) - there you can find problem statement, some theory explanations and code analysis.
 
 ## Results
 
@@ -36,7 +36,6 @@ The project has the following structure:
 
 ```
 me_not_me_detector
-├───article
 ├───datasets
 │   ├───face_dataset_test_images
 │   │   ├───me      # this folder contains TEST images for ME class
@@ -58,7 +57,6 @@ me_not_me_detector
 ```
 
 Let's talk about folders.
-- The `article` folder contains the data for the tutorial.
 - The `models` folder contains trained models for their test and further use.
 - The `datasets` folder contains three folders - for a train set, test set and augmented train set (optional). Each of them contains two subfolders for two classes - *me* and *not_me*. In the general case, it contains N subfolders for N classes.
 
@@ -67,4 +65,3 @@ Now let's talk about the code files - jupyter notebooks.
 - `me_not_me_classifier_model_comparison.ipynb` file contains code to train and test five different models.
 - `me_not_me_classifier.ipynb` file does the same thing, but for one particular model. You can use it as an example to build your own classifier.
 - `me_not_me_detector.ipynb` file uses the OpenCV library and turns the classifier into a real-time detector.
-
