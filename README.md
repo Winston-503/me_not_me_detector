@@ -10,7 +10,7 @@ This is a program, that does real-time face detection on webcam image and also c
 
 ## Tutorial
 
-You can read detailed tutorial [on Towards Data Science](https://towardsdatascience.com/how-to-create-real-time-face-detector-ff0e1f81925f) - there you can find problem statement, some theory explanations and code analysis.
+You can read detailed tutorial on [Towards Data Science](https://towardsdatascience.com/how-to-create-real-time-face-detector-ff0e1f81925f). There you can find problem statement, some theory explanations and code analysis.
 
 ## Results
 
