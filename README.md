@@ -56,7 +56,6 @@ me_not_me_detector
 └── requirements.txt
 ```
 
-Let's talk about folders.
 - The `models` folder contains trained models for their test and further use.
 - The `datasets` folder contains three folders - for a train set, test set and augmented train set (optional). Each of them contains two subfolders for two classes - *me* and *not_me*. In the general case, it contains N subfolders for N classes.
 
